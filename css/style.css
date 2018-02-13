@@ -1,0 +1,346 @@
+body {
+  color: #fff;
+  background-color: #000;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+
+
+
+
+body > div {
+  border: 2px solid #fff;
+  margin-top: 7vh;
+}
+
+.menu {
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: center;
+  line-height: 3em;
+  border: 0;
+  text-transform: uppercase;
+  background-color: #000;
+  z-index: 90;
+  position: fixed;
+  top: 0;
+}
+
+.menu .col {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.menu .col:hover {
+  box-shadow: inset 0 -10px  0 #fff;
+
+}
+
+
+
+.advertise {
+  height: 3em;
+  margin: 0;
+  padding: 0.7em;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  text-align: center;
+  z-index: 91;
+  position: fixed;
+  top: 0;
+  display: none;
+}
+
+.advertise-text {
+  color: #000;
+}
+
+.close-advertise {
+  width: 3%;
+  min-width: 50px;
+  background-color: #4c4c4c;
+  cursor: pointer;
+}
+
+.video-container {
+  border: 0;
+  margin-top: 3em;
+  min-height: 40vw;
+  position: relative;
+  padding: 0;
+}
+
+.volume-control{
+  position: absolute;
+  bottom: -1vw;
+  right: 1.5vw;
+  opacity: 0.3;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.volume-control:hover{
+  opacity: 1;
+}
+
+@keyframes example {
+  0% {-webkit-filter: drop-shadow(5px 5px 0 #000);
+    filter: drop-shadow(5px 5px 0 #000);
+  }
+  10% {-webkit-filter: drop-shadow(5px 5px 0 #000);
+    filter: drop-shadow(-5px 7px 0 #000);
+  }
+  20% {-webkit-filter: drop-shadow(5px 5px 0 #000);
+    filter: drop-shadow(15px 10px 0 #000);
+  }
+  30% {-webkit-filter: drop-shadow(5px 5px 0 #000);
+    filter: drop-shadow(0px 15px 0 #000);
+  }
+  40% {-webkit-filter: drop-shadow(5px 5px 0 #000);
+    filter: drop-shadow(7px 12px 0 #000);
+  }
+  50% {-webkit-filter: drop-shadow(5px 5px 0 #000);
+    filter: drop-shadow(10px 8px 0 #000);
+  }
+  60% {-webkit-filter: drop-shadow(5px 5px 0 #000);
+    filter: drop-shadow(5px 5px 0 #000);
+  }
+  70% {-webkit-filter: drop-shadow(5px 5px 0 #000);
+    filter: drop-shadow(5px 5px 0 #000);
+  }
+  75% {-webkit-filter: drop-shadow(5px 5px 0 #000);
+    filter: drop-shadow(0 0 0 #000);
+  }
+  100% {-webkit-filter: drop-shadow(5px 5px 0 #000);
+    filter: drop-shadow(5px 5px 0 #000);
+  }
+
+}
+
+#video_overlays {
+  position:relative;
+  z-index:89;
+  width: 100%;
+
+}
+
+#video_overlays img{
+  width: 50%;
+  animation: example 3s infinite;
+  margin-left: 25%;
+}
+
+#about {
+
+  text-align: center;
+  min-width: 350px;
+  padding: 3em;
+  background-image: url(../res/about.jpg);
+
+}
+
+#album{
+  background-image: url(../res/buyAlbum.jpg);
+  text-align: center;
+}
+
+#signup{
+  background-image: url(../res/signup.jpg);
+  text-align: center;
+}
+
+#signup .search-field,#signup .search-submit{
+  border: 0;
+
+}
+
+#signup .search-field, #signup .search-field::placeholder{
+  color: white;
+  background-color: #000;
+  padding: 1em;
+  padding-left: 0.3em;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+  margin-top: 5em;
+}
+
+#signup .search-field:hover{
+  opacity: 1;
+}
+
+#signup .search-submit{
+  background-color: #fff;
+  padding: 1em;
+}
+
+#album h1{
+  padding-bottom: 2em;
+  text-transform: uppercase;
+}
+
+.boldName{
+  font-weight: bold;
+}
+
+.avaliableInfo{
+  padding-top: 4em;
+  padding-bottom: 0.8em;
+  text-transform: uppercase;
+}
+
+#about, #album, #signup{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 3em;
+  padding-top: 2em;
+  vertical-align: middle;
+  min-height: 80vh;
+}
+
+
+
+kbd {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#about button {
+  background-color: black;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+  padding: 0.5em;
+  border:0;
+  color: white;
+}
+
+#about button:hover {
+  opacity: 1;
+}
+
+.row, .col-sm {
+  border: 0;
+  margin-bottom: 0;
+}
+
+.card {
+  margin: auto;
+  color: #000;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.contacts {
+  text-align: center;
+  font-size: 36px;
+}
+
+.contacts.bottom {
+  width: 30%;
+}
+
+.contacts .col{
+  cursor: pointer;
+  text-shadow: 2px 1px 0px rgba(0, 0, 0, 1);
+}
+
+.contacts .col{
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+
+
+.apple:hover{
+  color: #737070
+}
+.bandcamp:hover{
+  color: #29706E
+}
+.facebook:hover{
+  color: #3b5998
+}
+.instagram:hover{
+  color: #c13584
+}
+.youtube:hover{
+  color: #ff0000
+}
+.vk:hover{
+  color: #4c75a3
+}
+.spotify:hover{
+  color: #1db954
+}
+.amazon:hover{
+  color: #ff9900
+}
+.soundcloud:hover{
+  color: #ff8800
+}
+
+
+.header-unit {
+  height: 250px;
+}
+
+#video-container {
+  position: absolute;
+}
+
+#video-container {
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+video {
+  position: absolute;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+video.fillWidth {
+  width: 100%;
+}
+
+#shop{
+  border: 0;
+}
+
+#shop .col{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.merch-image{
+  overflow: hidden;
+  width: 19vw;
+  height: 19vw;
+  min-width: 120px;
+  min-height: 120px;
+
+}
+
+.merch-image img{
+  height: 100%;
+}
+
+.merch-info{
+  background-color: #fff;
+  width: 19vw;
+  height: 19vw;
+  min-width: 120px;
+  min-height: 120px;
+
+}
