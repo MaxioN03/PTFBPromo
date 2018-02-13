@@ -4,13 +4,15 @@ body {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-
-
-
-
 body > div {
   border: 2px solid #fff;
   margin-top: 7vh;
+  margin-bottom: 7vh;
+}
+
+::selection{
+  color: #000;
+  background-color: #fff;
 }
 
 .menu {
@@ -146,6 +148,8 @@ body > div {
 #album{
   background-image: url(../res/buyAlbum.jpg);
   text-align: center;
+
+
 }
 
 #signup{
@@ -175,6 +179,7 @@ body > div {
 #signup .search-submit{
   background-color: #fff;
   padding: 1em;
+  cursor: pointer;
 }
 
 #album h1{
@@ -201,6 +206,24 @@ body > div {
   padding-top: 2em;
   vertical-align: middle;
   min-height: 80vh;
+
+
+
+
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  align-items : center;
+
+  justify-content : center;
+
+
+  flex-direction: column;
+
 }
 
 
@@ -239,6 +262,11 @@ kbd {
 .contacts {
   text-align: center;
   font-size: 36px;
+  margin-top: 4em;
+
+}
+#album .contacts{
+  margin-top: 1em;
 }
 
 .contacts.bottom {
@@ -320,16 +348,20 @@ video.fillWidth {
 #shop .col{
   display: flex;
   flex-direction: row;
+  margin: auto;
 }
 
 
+.merch-image,.merch-info{
+  width: 13vw;
+  height: 13vw;
+
+}
+
 .merch-image{
   overflow: hidden;
-  width: 19vw;
-  height: 19vw;
   min-width: 120px;
   min-height: 120px;
-
 }
 
 .merch-image img{
@@ -338,9 +370,49 @@ video.fillWidth {
 
 .merch-info{
   background-color: #fff;
-  width: 19vw;
-  height: 19vw;
   min-width: 120px;
   min-height: 120px;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
