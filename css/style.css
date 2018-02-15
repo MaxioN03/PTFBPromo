@@ -375,10 +375,21 @@ video.fillWidth {
 
 }
 
+
+.concert{
+  border-left: 0.1em solid white;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  padding: 0.5em;
+  padding-left: 1em;
+}
+
 #map{
-  border: 2px solid red;
+
   width: 100%;
   height: 100%;
+  margin-top: 10%;
+
 }
 
 

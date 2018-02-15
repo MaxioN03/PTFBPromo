@@ -1,25 +1,17 @@
 var myMap;
 
-// Дождёмся загрузки API и готовности DOM.
-yMaps.ready(init);
+ymaps.ready(init);
 
-function init () {
-  // Создание экземпляра карты и его привязка к контейнеру с
-  // заданным id ("map").
-  myMap = new ymaps.Map('map', {
-    // При инициализации карты обязательно нужно указать
-    // её центр и коэффициент масштабирования.
-    center: [53.911817, 27.585836],
-    zoom: 15
-  }, {
-    searchControlProvider: 'yandex#search'
-  });
+//Инициализация карты
+function init() {
+    myMap = new ymaps.Map('map', {
+      center: [53.902496, 27.561481], // Минск
+      zoom: 6,
+      controls: []
+      //controls: ['zoomControl','typeSelector']
 
-  myMap.geoObjects.add(new ymaps.Placemark([53.911817, 27.585836], {
-    balloonContent: 'пер.Краснозвездный, 12, каб.301'
-  }, {
-    preset: 'islands#governmentCircleIcon',
-    iconColor: '#3b5998'
-  }))
-
+    }, {
+      minZoom: 4,
+      searchControlProvider: 'yandex#search'
+    });
 }
